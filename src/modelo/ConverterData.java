@@ -14,7 +14,7 @@ import org.jdesktop.beansbinding.Converter;
  * @author Killer
  */
 public class ConverterData extends Converter{
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     
     @Override
     public Object convertForward(Object value) {

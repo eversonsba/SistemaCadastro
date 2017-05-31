@@ -90,7 +90,7 @@ public class Pessoa implements Serializable {
         this.cidade = cidade;
     }
     public String getNascimentoFormatdo(){
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         return sdf.format(nascimento.getTime());
     }
 }
