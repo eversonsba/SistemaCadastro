@@ -96,10 +96,10 @@ public class DAOPessoa {
         }
     }
     public boolean remover(Pessoa obj){
-        String sql = "delete from cidades where codigo = ?";
+        String sql = "delete from pessoas where codigo = ?";
          try {
             PreparedStatement pst = Conexao.getPreparedStatement(sql);
-            pst.setString(1, obj.getNome());
+            pst.setInt(1, obj.getCodigo());
             if(pst.executeUpdate() > 0){
                 JOptionPane.showMessageDialog(null,"Pessoa excluida com sucesso");
                 return true;
