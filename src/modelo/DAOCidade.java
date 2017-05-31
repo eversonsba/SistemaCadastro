@@ -109,7 +109,7 @@ public Cidade localizar(Integer id){
     Cidade obj = new Cidade();
     try {
             PreparedStatement pst = Conexao.getPreparedStatement(sql);
-            pst.setString(1, obj.getNome());
+            pst.setInt(1, id);
             ResultSet rs = pst.executeQuery();
             while (rs.next()){
                 obj.setCodigo(rs.getInt("codigo"));
